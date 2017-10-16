@@ -1,0 +1,107 @@
+1 projekt:
+
+1 klasa:
+
+package pl.lodz.uni.math.Animals;
+
+public class Animal {
+	public void eat() {}
+}
+
+2 klasa:
+
+package pl.lodz.uni.math.Animals;
+
+public class Dog2 extends Animal{
+	public void eat() {}
+}
+
+3 klasa(main):
+package pl.lodz.uni.math.Animals;
+
+public class AnimalTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Animal a1 = new Dog2();
+		Dog2 a2 = new Dog2();
+		
+		a1.eat();
+		a2.eat();
+	}
+
+}
+
+-----------------------------------------
+2 projekt:
+
+
+1 klasa:
+package pl.lodz.uni.math.ClassA;
+
+public class A extends B {
+	
+	public A() {
+		// TODO Auto-generated constructor stub
+		System.out.println("A1");
+	}
+		
+	public void test() { System.out.println("T1"); }
+	
+	{
+		System.out.println("I1");
+	}
+
+	static {
+		System.out.println("I0");
+	}
+
+
+
+
+
+
+}
+
+	
+
+2klasa:
+package pl.lodz.uni.math.ClassA;
+
+public class B {
+	
+	public B() {
+		// TODO Auto-generated constructor stub
+		System.out.println("MB A1");
+	}
+	
+	{
+		System.out.println("MB I1");
+	}
+
+	static {
+		System.out.println("MB I0");
+	}
+}
+
+3 klasa(main):
+package pl.lodz.uni.math.ClassA;
+
+public class ABTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		A a = new A();
+		a.test();
+		
+	}
+
+}
