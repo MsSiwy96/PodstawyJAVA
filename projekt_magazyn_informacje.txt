@@ -11,7 +11,8 @@ MAGAZYN - zadanie na zaliczenie
 - kazda paczka ma rozmiar (1,1,1) (x,y,z)
 - kazda paczka ma swoj typ (zabawka, koc itp.)
 - tylko 1 dzwig
-- opis, ile razy ruszona(history of moves), data dodania, numer(hash), priorytet (kazda paczka zawiera takie wartosci)
+
+- Paczka zawiera: opis, ile razy ruszona, data dodania, numer(hash), priorytet (kazda paczka zawiera takie wartosci)
 - paczka z mniejszym priorytetem nie moze byc polozona na paczke z wiekszym priorytetem
 
 - przekladanie paczek tylko w tym klocku
