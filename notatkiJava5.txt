@@ -36,8 +36,11 @@ HashMap v
 
 // Dr. Heintz Kabutz - master of Java, zapisaæ siêna newsletter, koleœ odpalony
 
-// za tydzieñ test: 45 pytañ, na ka¿de 1 min.(pzdr600)
+// za tydzieñ test: 45 pytañ, na ka¿de 1 min.(pzdr600), przygotuj kartkê i d³ugopis, test wielokrotnego wyboru
 
 // string s¹ IMMUTABLE (nie mo¿na dodawaæ wartoœci bo adresy zostaj¹ w pamiêci)
 
 // w domu: co jeszcze jest IMMUTABLE w Javie
+// napisaæ Singletona Z enumem i udowodniæ ¿e nie tworzy dwóch instance w jednym takcie zegara
+
+// Pamiêtaj o zrobieniu tego projektu STORAGE
