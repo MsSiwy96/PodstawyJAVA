@@ -1,0 +1,43 @@
+class Moof {
+//equals musi byæ public	
+		    public boolean equals (Object o) {
+			if (o instanceof Moof) && (((Moof))o).getMoofValue == this.getMoofValue)){
+			
+			return true;
+			
+			} else {
+			
+			return false;
+			}
+	
+
+		// je¿eli nie bêdzie 1 czêsci IF-ato wypadnie b³¹d w kompilacji ClassCastException je¿eli "o" z nawiasów nie bêdzie klasy Moof
+
+------------------------------------- hashCode ------------------------------------
+
+// kazdej literze przyporzadkowana jest cyfra A=1 ....
+
+Alex = A(1) + L(12) + e(5) + x(24) = 42 - nasz hash
+Bob = 19
+Dirk = 42
+Fred = 33
+
+Potrzebna odpowiednia metoda Hashowania (nie mo¿na losowej)
+
+HashMap v
+
+	Kwadrat -> Kwadrat -> Kwadrat -> Kwadrat
+	19	   33          42                   --- tablice zawieraj¹ce id(Hash)    
+	
+	Bob	   Fred        Alex			
+			       Dirk
+
+
+
+// Dr. Heintz Kabutz - master of Java, zapisaæ siêna newsletter, koleœ odpalony
+
+// za tydzieñ test: 45 pytañ, na ka¿de 1 min.(pzdr600)
+
+// string s¹ IMMUTABLE (nie mo¿na dodawaæ wartoœci bo adresy zostaj¹ w pamiêci)
+
+// w domu: co jeszcze jest IMMUTABLE w Javie
