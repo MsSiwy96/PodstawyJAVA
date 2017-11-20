@@ -1,0 +1,90 @@
+jUnit   - testy jednostkowe
+
+public class JunitTest
+{
+	
+	@Test;	//adnotacja(annotacja(?)) testu(?) 
+	public void test()
+	{
+		
+		
+	}
+}
+
+
+@Test - pojedynczy test jednostkowy
+
+mam klase i metody
+A{
+
+a() { if ..}  //test sprawdza jedna jednostke (jedna sciezka) (2 test to nastepny z ifem itd.) <- to jest TestCoverage
+b() {}
+
+c() {}
+
+d() {}
+
+}
+
+
+TestComplexity - ile schodkow w funkcji
+
+asercje:
+
+assertEquals(a,b)
+assertTrue(a<b)
+assertFalse(a<b)
+assertNotNull(a)
+assertNull(b)
+
+assertSame(a,b) - sprawdza referencjie
+assertNotSame(a,b)
+assertArrayEquals(a,b) - sprawdza tablice
+
+@BeforeClass - wykona sie w 1 kolejnosci
+@AfterClass - odpala sie na samym koncu
+@Before - odpala sie przed kazdym jednym testem
+@After - po kazdym jednym tescie
+@Test
+@Ignore - ignoruje test (lepiej nie korzystac, a na pewno nie zostawiac do konca)
+
+! Testy trzeba pisac !
+
+pobierz jUnit jako .jar i dodaj do projektu
+
+================ Zadania (1 do wyboru, Projekt wymagany) --------------------------
+
+Napisac gre i udowodnic ,ze ona dziala za pomoca testow (w main nie ma ani jednej linijki kodu)
+
+1.Bowling
+
+2.Dart
+
+----------------------------------------------------------------------------------
+
+Nastepny Temat:
+
+
+VM
+
+Controller --testy do kontrolera tylko na kontrolerze
+
+warstwa DAO(SQL) -- testy do baz danych tylko na bazie danych (warstwie DAO)
+
+(?) EasyMok
+(?) Moquito
+
+zaslepka| DAO dao = EasyMok.createMok(DAO-class) -- zeby nie musiec wchodzic do bazy danych tylko wpychac jakas swoja wartosc zgodna z danymi
+	Person p = new Person();
+		personID(10);
+
+EasyMok.replay(dao);
+controller.setDao(dao);
+controller.getPersonByID(10);
+
+Zadanie 2: --------------------------
+
+Do projektu factory, ktory mielismy, przetestowac factory za pomoca EasyMok
+
+
+
