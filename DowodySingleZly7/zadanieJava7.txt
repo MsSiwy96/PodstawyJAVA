@@ -1,0 +1,48 @@
+public class Singleton
+{
+	int value;
+	private static Singleton INSTANCE = null;
+	private Singleton() {}
+	public static Singleton getInstance()
+	{
+		if(INSTANCE == null)
+		{
+			INSTANCE = new Singleton(); // (*) bez tego
+		}
+
+
+		return INSTANCE;
+	}
+	
+}
+
+//Udowodnic ze to zly singleton potem dodac tekst z (*) i rowniez udowodnic ze nie
+
+if(INSTANCE == null)
+{
+	(*)synchronize(Singleton class)
+	{
+		(*)if(INSTANCE == NULL)
+		{
+			INSTANCE == new Singleton();
+		}	
+	}
+	(*)
+}
+
+18.12 test z Javy, test wielokrotnego wyboru, 1:30 min na pytanie, 45 pytan
+
+---------- KolejnyTemat ----------------------------------------------------
+
+MAVEN (GRADL / SBT / ...)
+
+mvnrepository.com
+
+ -> pom.xml
+	<dependencies>
+		<dependency>
+    		<groupId
+    		<artifactId
+    		<version
+    		<....
+		</dependency>
